@@ -1,6 +1,24 @@
-# ToMMo2Annovar
+# ToMMoVcf2Annovar
 Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
 
+## Usage
+put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts, then run convert script.
+
+`./00_convert_35KJPNv2.sh`
+
+It generates two files, tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb and tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.
+
+tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb has minor allele information.
+
+    1	110165	110165	A	G	0.0003
+    1	110177	110177	A	T	0.0015
+
+tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb has allele count information. For chromosome X, MALE and FEMALE count data are separated to check hemizygous MALE easily.
+
+    22	51244443	51244443	C	G	AC=7;AN=5428 # allele counts (AC) are merged
+    X	60003	60003	A	G	AC_MALE=5;AN_MALE=2192; AC_FEMALE=0;AN_FEMALE=2820 # separated
+
+## Details
 **00_convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
 
 from vcf
@@ -44,20 +62,6 @@ separated data
     1	26815020	26815020	G	C	AF=0.1111
     1	26815020	26815020	G	A	AF=0.1765
     1	26815020	26815020	G	T	AF=0.0111
-
-## Usage
-put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts, then run convert script.
-
-`./00_convert_35KJPNv2.sh`
-
-It generates two files, tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb and tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.
-
-tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb has minor allele information.
-
-tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb has allele count information. For chromosome X, MALE and FEMALE count data are separated to check hemizygous MALE easily.
-
-    22	51244443	51244443	C	G	AC=7;AN=5428 # allele counts (AC) are merged
-    X	60003	60003	A	G	AC_MALE=5;AN_MALE=2192; AC_FEMALE=0;AN_FEMALE=2820 # separated
 
 ## Contact
 Masakazu KOHDA ma.kohda@gmail.com

@@ -1,7 +1,7 @@
 # ToMMo2Annovar
 Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
 
-00_convert_35KJPNv2.sh mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
+**00_convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
 
 from vcf
 
@@ -19,7 +19,7 @@ to 6 column
     1	26815020	26815020	G	C,A,T	AF=0.1111,0.1765,0.0111
 
 
-10_tommo_separate_alternatives.rb separates multi allelic variants found in 6 column format
+**10_tommo_separate_alternatives.rb** separates multi allelic variants found in 6 column format. This ruby script automatically run in 00_convert_35KJPNv2.sh
 
 input data
 
@@ -46,14 +46,14 @@ separated data
     1	26815020	26815020	G	T	AF=0.0111
 
 ## Usage
-put ToMMo's vcf files to data/ directory, then run convert script
+put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts, then run convert script.
 
 `./00_convert_35KJPNv2.sh`
 
-Contact
+## Contact
 Masakazu KOHDA ma.kohda@gmail.com
 
-License
+## License
 Copyright: Masakazu KOHDA
 This software is released under the MIT License, see LICENSE.txt.
 

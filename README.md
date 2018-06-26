@@ -18,7 +18,7 @@ tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb has allele count information. 
     22	51244443	51244443	C	G	AC=7;AN=5428 # allele counts (AC) are merged
     X	60003	60003	A	G	AC_MALE=5;AN_MALE=2192; AC_FEMALE=0;AN_FEMALE=2820 # separated
 
-## details
+## Details
 **00_convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
 
 from vcf

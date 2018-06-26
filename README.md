@@ -1,4 +1,4 @@
-# ToMMo2Annovar
+# ToMMoVcf2Annovar
 Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
 
 **00_convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format

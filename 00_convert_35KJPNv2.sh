@@ -3,7 +3,6 @@
 # AF
 echo "create tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb"
 foreach vcf in data/tommo-3.5kjpnv2-20180625-af_snvall-{autosome,chrX_PAR2,chrX_PAR3,chrMT}.vcf
-  echo $vcf
   perl -F"\t" -lane '$F[7] =~ s/.*?(AF=0.\d+|AF=0.\d+,0.\d+|AF=0.\d+,0.\d+,0.\d+|AF=1);.*/$1/; print join("\t", @F[0,1,1,3,4], $F[7])' ${vcf}
 end | grep -v "^#" > tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb.org
 ./10_tommo_separate_alternatives.rb tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb.org | perl -pe 's/AF=//' > tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb

@@ -50,6 +50,15 @@ put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts
 
 `./00_convert_35KJPNv2.sh`
 
+It generates two files, tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb and tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.
+
+tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb has minor allele information.
+
+tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb has allele count information. For chromosome X, MALE and FEMALE count data are separated to check hemizygous MALE easily.
+
+    22	51244443	51244443	C	G	AC=7;AN=5428 # allele counts (AC) are merged
+    X	60003	60003	A	G	AC_MALE=5;AN_MALE=2192; AC_FEMALE=0;AN_FEMALE=2820 # separated
+
 ## Contact
 Masakazu KOHDA ma.kohda@gmail.com
 

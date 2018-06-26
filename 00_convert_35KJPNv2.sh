@@ -21,3 +21,7 @@ end | grep -v "^#" >> tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.org
 
 ./10_tommo_separate_alternatives.rb tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.org > tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb
 echo "complete"
+
+echo "check line numbers in two files"
+wc -l tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb
+wc -l tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb

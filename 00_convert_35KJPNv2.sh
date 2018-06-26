@@ -8,7 +8,6 @@ end | grep -v "^#" > tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb.org
 ./10_tommo_separate_alternatives.rb tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb.org | perl -pe 's/AF=//' > tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb
 echo "complete"
 
-
 # other INFO
 # chr1-22 AC=1;AN=6744;
 # chrX,chrM AC_MALE=1;AN_MALE=2946;AC_FEMALE=0;AN_FEMALE=3798
@@ -21,7 +20,6 @@ end | grep -v "^#" >> tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.org
 
 ./10_tommo_separate_alternatives.rb tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.org > tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb
 echo "complete"
-
 
 echo "check line numbers in two files"
 wc -l tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb

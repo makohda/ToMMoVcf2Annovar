@@ -4,7 +4,7 @@ Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
 ## Usage
 put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts, then run convert script.
 
-`./00_convert_35KJPNv2.sh`
+`./convert_35KJPNv2.sh`
 
 It generates two files, tommo-3.5kjpnv2-20180625-af_snvall.MAF.genericdb and tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb.
 
@@ -19,7 +19,7 @@ tommo-3.5kjpnv2-20180625-af_snvall.INFO.genericdb has allele count information. 
     X	60003	60003	A	G	AC_MALE=5;AN_MALE=2192; AC_FEMALE=0;AN_FEMALE=2820 # separated
 
 ## Details
-**00_convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
+**convert_35KJPNv2.sh** mainly processes tommo-3.5kjpnv2-20180625-af_snvall-*.vcf files. It converts from vcf format to 6 colomn Annovar genericdb format
 
 from vcf
 
@@ -37,7 +37,7 @@ to 6 column
     1	26815020	26815020	G	C,A,T	AF=0.1111,0.1765,0.0111
 
 
-**10_tommo_separate_alternatives.rb** separates multi allelic variants found in 6 column format. This ruby script automatically run in 00_convert_35KJPNv2.sh
+**tommo_separate_alternatives.rb** separates multi allelic variants found in 6 column format. This ruby script automatically run in convert_35KJPNv2.sh
 
 input data
 

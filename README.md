@@ -1,5 +1,5 @@
 # ToMMoVcf2Annovar
-Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
+Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format. Download site of vcf files is https://jmorp.megabank.tohoku.ac.jp/201806/downloads/
 
 ## Usage
 put ToMMo's vcf files to ./data/ directory, give apropriate permissions to scripts, then run convert script.

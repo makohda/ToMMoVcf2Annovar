@@ -2,7 +2,7 @@
 Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format
 
 ## Usage
-put ToMMo's vcf files to data/ directory, give apropriate permissions to scripts, then run convert script.
+put ToMMo's vcf files to ./data/ directory, give apropriate permissions to scripts, then run convert script.
 
 `./convert_35KJPNv2.sh`
 

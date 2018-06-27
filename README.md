@@ -63,6 +63,9 @@ separated data
     1	26815020	26815020	G	A	AF=0.1765
     1	26815020	26815020	G	T	AF=0.0111
 
+## Warning
+In gene-hunting projects, a mistake in variant filtering may cause a disaster. Please recheck results from this script by yourself. The author gratefully welcome your bug reports.
+
 ## Contact
 Masakazu KOHDA ma.kohda@gmail.com
 

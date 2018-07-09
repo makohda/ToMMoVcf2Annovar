@@ -3,6 +3,7 @@ Convert ToMMo 3.5KJPNv2 vcf files to Annovar genericdb format. Download site of 
 
 ## ChangeLog
 UPDATE (180710): fixed handling INFO column data of chrX and MT in tommo_separate_alternatives.rb
+
 UPDATE (180702): To avoid duplicated entries, removed tommo-3.5kjpnv2-20180625-af_snvall-chrX_PAR2.vcf and use tommo-3.5kjpnv2-20180625-af_snvall-chrX_PAR3.vcf only. More details are in [PAR2 and PAR3 files](https://github.com/makohda/ToMMoVcf2Annovar#par2-and-par3-files)
 
 ## Usage

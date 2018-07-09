@@ -73,4 +73,3 @@ Masakazu KOHDA ma.kohda@gmail.com
 ## License
 Copyright: Masakazu KOHDA
 This software is released under the MIT License, see LICENSE.txt.
-
